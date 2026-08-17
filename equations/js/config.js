@@ -5,7 +5,7 @@ window.DIAGNOSTIC = {
   titre: "Manipulation d’équations",
   formation: "BTS Maintenance des systèmes — option SP",
   dureeSec: 40 * 60,
-  appsScriptUrl: "",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbztApl1OcZeeZJEpafIorn6uw0bDQLmyHuiAogn7ZvKvCM86YDZytCHWhay_Yp3fhISBg/exec",
   localCollecteUrl: "http://127.0.0.1:8789/",
   groupes: [
     { id: "1MS-A", label: "1MS-A — Formation initiale" },
