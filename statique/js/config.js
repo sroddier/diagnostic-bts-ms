@@ -5,7 +5,7 @@ window.DIAGNOSTIC = {
   "titre": "Statique qualitative",
   "formation": "BTS Maintenance des systèmes — option SP",
   "dureeSec": 2400,
-  "appsScriptUrl": "",
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbyPY3U9jHCmT1ORw6aNRw8OMVnDOElC45B5jCh51J4SN4rMryOt2_160zkBFIu840TO/exec",
   "localCollecteUrl": "http://127.0.0.1:8791/",
   "groupes": [
     {

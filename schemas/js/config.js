@@ -5,7 +5,7 @@ window.DIAGNOSTIC = {
   "titre": "Lecture de representations",
   "formation": "BTS Maintenance des systèmes — option SP",
   "dureeSec": 2400,
-  "appsScriptUrl": "",
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbyXAoE7sBjPZnhTwmULmKCI28rFVME-NGLmvw99Mjscn2mf_N5FwYSlFM79ymyYNhV0/exec",
   "localCollecteUrl": "http://127.0.0.1:8790/",
   "groupes": [
     {
