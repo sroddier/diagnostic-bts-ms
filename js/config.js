@@ -4,7 +4,7 @@ window.DIAGNOSTIC = {
   formation: "BTS Maintenance des systèmes — option SP",
   dureeSec: 55 * 60,
   /* Coller l’URL du déploiement Apps Script (se termine par /exec). */
-  appsScriptUrl: "",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbxORkveocDQUOv_uf2YD6FCwCXHag7t-QC-7Zk7nP_QKCjifkM5LVpD4IMBOeE08WF5HQ/exec",
   groupes: [
     { id: "1MS-A", label: "1MS-A — Formation initiale" },
     { id: "1MS-B", label: "1MS-B — Formation initiale" },

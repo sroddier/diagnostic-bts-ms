@@ -1,10 +1,13 @@
 teacher/cle-correction.json
+teacher/Code-a-coller.gs
+teacher/feuille.json
 teacher/exports/
 data/items.full.json
 exports/
 js/config.local.js
 scripts/banque.py
 scripts/test_flux.py
+scripts/essai_collecte.py
 .DS_Store
 Thumbs.db
 __pycache__/
