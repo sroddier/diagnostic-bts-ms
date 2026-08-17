@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Positionnement rentrée — BTS MS option SP</title>
+  <meta name="description" content="Test de positionnement de rentrée pour le BTS Maintenance des systèmes, option Systèmes de production." />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%2310141c' width='64' height='64' rx='10'/><text x='32' y='42' text-anchor='middle' font-size='18' font-family='Georgia' fill='%23e8b931'>MS</text></svg>" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">MS</span>
+      <div>
+        <strong>BTS MS · option SP</strong>
+        <em>Positionnement de rentrée</em>
+      </div>
+    </div>
+    <div class="meta" id="qui-wrap">
+      <div id="qui"></div>
+      <div id="timer" hidden></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="ecran" id="ecran-accueil">
+      <div class="hero">
+        <div class="kicker">Première année · 55 minutes</div>
+        <h1>Où en êtes-vous<br>en arrivant en BTS&nbsp;?</h1>
+        <p class="lede">Ce n’est pas une note de bulletin. C’est un positionnement pour construire votre accompagnement : mécanique, et les outils communs (maths, physique, documents, méthode, techno).</p>
+      </div>
+
+      <div class="notice">
+        <strong>Données collectées.</strong>
+        Nom, prénom, groupe, bac d’origine, réponses, temps passé. Destinataire : votre professeur de mécanique.
+        Conservation : l’année scolaire. Aucun compte. Les résultats ne sont pas publiés sur cette page.
+      </div>
+
+      <form class="card" id="form-identite">
+        <div class="grid2">
+          <label>Nom
+            <input name="nom" autocomplete="family-name" required minlength="2" />
+          </label>
+          <label>Prénom
+            <input name="prenom" autocomplete="given-name" required minlength="2" />
+          </label>
+          <label>Groupe
+            <select name="groupe" id="groupe" required></select>
+          </label>
+          <label>Bac d’origine
+            <select name="bac" id="bac" required></select>
+          </label>
+          <label>Code séance (au tableau)
+            <input name="code" autocomplete="off" required placeholder="Donné par le professeur" />
+          </label>
+        </div>
+        <label class="check" style="margin-top:1rem">
+          <input type="checkbox" id="rgpd" required />
+          <span>J’ai lu l’information ci-dessus. Je passe ce positionnement dans le cadre de ma formation.</span>
+        </label>
+        <div class="actions">
+          <button class="btn" type="submit">Commencer le test</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="ecran" id="ecran-test" hidden>
+      <div class="progress">
+        <span id="progress-txt"></span>
+        <div class="bar"><div id="progress-bar"></div></div>
+      </div>
+      <article class="qbox">
+        <div id="q-domaine"></div>
+        <h2 id="q-intitule"></h2>
+        <p id="q-hint" hidden></p>
+        <div id="q-figure"></div>
+        <div id="q-html"></div>
+        <div id="q-choix" class="choix"></div>
+        <div class="conf-wrap">
+          <span>Votre confiance sur cette réponse</span>
+          <div class="conf" id="conf">
+            <button type="button" data-n="1">Peu sûr</button>
+            <button type="button" data-n="2">Assez sûr</button>
+            <button type="button" data-n="3">Sûr</button>
+          </div>
+        </div>
+      </article>
+      <div class="navq" id="nav-q"></div>
+      <div class="actions">
+        <button class="btn ghost" type="button" id="btn-prev">Précédente</button>
+        <button class="btn ghost" type="button" id="btn-next">Suivante</button>
+        <button class="btn" type="button" id="btn-envoyer">Envoyer la copie</button>
+      </div>
+    </section>
+
+    <section class="ecran" id="ecran-resultat" hidden>
+      <div class="hero">
+        <div class="kicker">Restitution immédiate</div>
+        <h1>Votre profil, <span id="res-prenom"></span></h1>
+        <p class="lede" id="res-msg"></p>
+        <p class="lede">Ce n’est pas une note. Les bonnes réponses ne sont pas affichées : le test sert encore aux autres groupes. Un bilan personnalisé vous sera remis ensuite.</p>
+      </div>
+      <div class="card res-grid">
+        <svg id="radar" viewBox="0 0 320 320" role="img" aria-label="Radar des six domaines"></svg>
+        <ul id="res-domaines"></ul>
+      </div>
+      <div class="actions">
+        <button class="btn ghost" type="button" id="btn-quitter">Terminer et effacer cet écran</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Positionnement interne BTS MS option SP · <span id="annee"></span>
+    · Pas une épreuve certificative.
+  </footer>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="overlay-card" id="overlay-txt">Enregistrement de la copie…</div>
+  </div>
+  <div id="toast" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/figures.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

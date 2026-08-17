@@ -1,0 +1,12 @@
+teacher/cle-correction.json
+teacher/exports/
+data/items.full.json
+exports/
+js/config.local.js
+scripts/banque.py
+scripts/test_flux.py
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
