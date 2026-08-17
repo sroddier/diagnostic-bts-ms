@@ -5,11 +5,15 @@ teacher/exports/
 unites/teacher/cle-correction.json
 unites/teacher/Code-a-coller.gs
 unites/teacher/exports/
+equations/teacher/cle-correction.json
+equations/teacher/Code-a-coller.gs
+equations/teacher/exports/
 data/items.full.json
 exports/
 js/config.local.js
 scripts/banque.py
 scripts/banque_unites.py
+scripts/banque_equations.py
 scripts/test_flux.py
 scripts/essai_collecte.py
 .DS_Store

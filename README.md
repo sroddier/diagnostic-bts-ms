@@ -5,7 +5,8 @@ Une heure en salle, trois groupes (`1MS-A`, `1MS-B`, `1MS-ALT`).
 Site public, résultats nominatifs dans **votre** feuille Google (privée).
 
 **Site (après publication) :** https://sroddier.github.io/diagnostic-bts-ms/  
-**Unités et conversions :** https://sroddier.github.io/diagnostic-bts-ms/unites/
+**Unités et conversions :** https://sroddier.github.io/diagnostic-bts-ms/unites/  
+**Manipulation d’équations :** https://sroddier.github.io/diagnostic-bts-ms/equations/
 
 ## Ce que ça fait
 
