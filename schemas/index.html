@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Manipulation d’équations — BTS MS option SP</title>
-  <meta name="description" content="Diagnostic de manipulation d’équations pour le BTS Maintenance des systèmes." />
+  <title>Lecture de représentations — BTS MS option SP</title>
+  <meta name="description" content="Diagnostic de lecture de plans, schémas et nomenclatures pour le BTS MS." />
   <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="../css/app.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%2310141c' width='64' height='64' rx='10'/><text x='32' y='42' text-anchor='middle' font-size='18' font-family='Georgia' fill='%23e8b931'>MS</text></svg>" />
@@ -15,7 +15,7 @@
       <span class="mark">MS</span>
       <div>
         <strong>BTS MS · option SP</strong>
-        <em>Manipulation d’équations</em>
+        <em>Lecture de représentations</em>
       </div>
     </div>
     <div class="meta" id="qui-wrap">
@@ -23,35 +23,24 @@
       <div id="timer" hidden></div>
     </div>
   </header>
-
   <main>
     <section class="ecran" id="ecran-accueil">
       <div class="hero">
-        <div class="kicker">Première année · 40 minutes</div>
-        <h1>Isoler, transposer,<br>sans se tromper de côté.</h1>
-        <p class="lede">Ce n’est pas une note de bulletin. Trente questions pour voir si vous savez faire passer une grandeur d’un membre à l’autre — sur les formules du métier (Ohm, pression, couple, rendement).</p>
+        <div class="kicker">Après les vacances d’octobre · 40 minutes</div>
+        <h1>Lire un dossier,<br>pas seulement le cours.</h1>
+        <p class="lede">Ce n’est pas une note de bulletin. Trente questions : schéma cinématique, traits de dessin, cote H7, nomenclature, symbole de vérin, extraire une info sur un extrait de plan.</p>
       </div>
-
       <div class="notice">
         <strong>Données collectées.</strong>
         Nom, prénom, groupe, bac d’origine, réponses, temps passé. Destinataire : votre professeur de mécanique.
         Conservation : l’année scolaire. Aucun compte. Les résultats ne sont pas publiés sur cette page.
       </div>
-
       <form class="card" id="form-identite">
         <div class="grid2">
-          <label>Nom
-            <input name="nom" autocomplete="family-name" required minlength="2" />
-          </label>
-          <label>Prénom
-            <input name="prenom" autocomplete="given-name" required minlength="2" />
-          </label>
-          <label>Groupe
-            <select name="groupe" id="groupe" required></select>
-          </label>
-          <label>Bac d’origine
-            <select name="bac" id="bac" required></select>
-          </label>
+          <label>Nom <input name="nom" autocomplete="family-name" required minlength="2" /></label>
+          <label>Prénom <input name="prenom" autocomplete="given-name" required minlength="2" /></label>
+          <label>Groupe <select name="groupe" id="groupe" required></select></label>
+          <label>Bac d’origine <select name="bac" id="bac" required></select></label>
           <label>Code séance (au tableau)
             <input name="code" autocomplete="off" required placeholder="Donné par le professeur" />
           </label>
@@ -60,17 +49,11 @@
           <input type="checkbox" id="rgpd" required />
           <span>J’ai lu l’information ci-dessus. Je passe ce positionnement dans le cadre de ma formation.</span>
         </label>
-        <div class="actions">
-          <button class="btn" type="submit">Commencer le test</button>
-        </div>
+        <div class="actions"><button class="btn" type="submit">Commencer le test</button></div>
       </form>
     </section>
-
     <section class="ecran" id="ecran-test" hidden>
-      <div class="progress">
-        <span id="progress-txt"></span>
-        <div class="bar"><div id="progress-bar"></div></div>
-      </div>
+      <div class="progress"><span id="progress-txt"></span><div class="bar"><div id="progress-bar"></div></div></div>
       <article class="qbox">
         <div id="q-domaine"></div>
         <h2 id="q-intitule"></h2>
@@ -94,16 +77,15 @@
         <button class="btn" type="button" id="btn-envoyer">Envoyer la copie</button>
       </div>
     </section>
-
     <section class="ecran" id="ecran-resultat" hidden>
       <div class="hero">
         <div class="kicker">Restitution immédiate</div>
         <h1>Votre profil, <span id="res-prenom"></span></h1>
         <p class="lede" id="res-msg"></p>
-        <p class="lede">Ce n’est pas une note. Les bonnes réponses ne sont pas affichées. Un bilan personnalisé vous sera remis ensuite.</p>
+        <p class="lede">Ce n’est pas une note. Les bonnes réponses ne sont pas affichées.</p>
       </div>
       <div class="card res-grid">
-        <svg id="radar" viewBox="0 0 320 320" role="img" aria-label="Radar des six domaines"></svg>
+        <svg id="radar" viewBox="0 0 320 320" role="img" aria-label="Radar"></svg>
         <ul id="res-domaines"></ul>
       </div>
       <div class="actions">
@@ -111,21 +93,15 @@
       </div>
     </section>
   </main>
-
   <footer>
-    Diagnostic équations · BTS MS option SP · <span id="annee"></span>
-    · Pas une épreuve certificative.
+    Diagnostic représentations · BTS MS · <span id="annee"></span>
     · <a href="../">Positionnement</a>
     · <a href="../unites/">Unités</a>
-    · <a href="../schemas/">Représentations</a>
+    · <a href="../equations/">Équations</a>
     · <a href="../statique/">Statique</a>
   </footer>
-
-  <div class="overlay" id="overlay" hidden>
-    <div class="overlay-card" id="overlay-txt">Enregistrement de la copie…</div>
-  </div>
+  <div class="overlay" id="overlay" hidden><div class="overlay-card" id="overlay-txt">Enregistrement…</div></div>
   <div id="toast" hidden></div>
-
   <script src="js/config.js"></script>
   <script src="js/questions.js"></script>
   <script src="js/figures.js"></script>

@@ -6,7 +6,9 @@ Site public, résultats nominatifs dans **votre** feuille Google (privée).
 
 **Site (après publication) :** https://sroddier.github.io/diagnostic-bts-ms/  
 **Unités et conversions :** https://sroddier.github.io/diagnostic-bts-ms/unites/  
-**Manipulation d’équations :** https://sroddier.github.io/diagnostic-bts-ms/equations/
+**Manipulation d’équations :** https://sroddier.github.io/diagnostic-bts-ms/equations/  
+**Lecture de représentations :** https://sroddier.github.io/diagnostic-bts-ms/schemas/  
+**Statique qualitative :** https://sroddier.github.io/diagnostic-bts-ms/statique/
 
 ## Ce que ça fait
 
