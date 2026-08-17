@@ -48,19 +48,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "0,45 m"
+        "texte": "0,0045 m"
       },
       {
         "id": "B",
-        "texte": "0,045 m"
+        "texte": "0,45 m"
       },
       {
         "id": "C",
-        "texte": "4,5 m"
+        "texte": "0,045 m"
       },
       {
         "id": "D",
-        "texte": "0,0045 m"
+        "texte": "4,5 m"
       }
     ]
   },
@@ -72,19 +72,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "1 Pa"
+        "texte": "10⁶ Pa"
       },
       {
         "id": "B",
-        "texte": "100 Pa"
+        "texte": "1 Pa"
       },
       {
         "id": "C",
-        "texte": "10⁵ Pa (100 000 Pa)"
+        "texte": "100 Pa"
       },
       {
         "id": "D",
-        "texte": "10⁶ Pa"
+        "texte": "10⁵ Pa (100 000 Pa)"
       }
     ]
   },
@@ -96,19 +96,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "6,4 mm"
-      },
-      {
-        "id": "B",
-        "texte": "32 mm"
-      },
-      {
-        "id": "C",
         "texte": "160 mm"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "1,60 mm"
+      },
+      {
+        "id": "C",
+        "texte": "6,4 mm"
+      },
+      {
+        "id": "D",
+        "texte": "32 mm"
       }
     ]
   },
@@ -145,19 +145,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "50 mm"
+        "texte": "57,7 mm"
       },
       {
         "id": "B",
-        "texte": "86,6 mm"
+        "texte": "50 mm"
       },
       {
         "id": "C",
-        "texte": "100 mm"
+        "texte": "86,6 mm"
       },
       {
         "id": "D",
-        "texte": "57,7 mm"
+        "texte": "100 mm"
       }
     ],
     "figure": "triangle_30"
@@ -170,19 +170,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Encastrement"
-      },
-      {
-        "id": "B",
-        "texte": "Glissière d’axe Z"
-      },
-      {
-        "id": "C",
         "texte": "Pivot d’axe Z"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "Liaison hélicoïdale"
+      },
+      {
+        "id": "C",
+        "texte": "Encastrement"
+      },
+      {
+        "id": "D",
+        "texte": "Glissière d’axe Z"
       }
     ],
     "figure": "pivot"
@@ -195,19 +195,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "0 degré de liberté"
+        "texte": "6 degrés de liberté"
       },
       {
         "id": "B",
-        "texte": "1 degré de liberté (une rotation)"
+        "texte": "0 degré de liberté"
       },
       {
         "id": "C",
-        "texte": "3 degrés de liberté (les 3 rotations)"
+        "texte": "1 degré de liberté (une rotation)"
       },
       {
         "id": "D",
-        "texte": "6 degrés de liberté"
+        "texte": "3 degrés de liberté (les 3 rotations)"
       }
     ]
   },
@@ -219,19 +219,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "10 N"
+        "texte": "4 N·m"
       },
       {
         "id": "B",
-        "texte": "10 N·m"
+        "texte": "10 N"
       },
       {
         "id": "C",
-        "texte": "250 N·m"
+        "texte": "10 N·m"
       },
       {
         "id": "D",
-        "texte": "4 N·m"
+        "texte": "250 N·m"
       }
     ],
     "figure": "cle_ecrou"
@@ -244,19 +244,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "0 N, le câble ne travaille pas à l’arrêt"
-      },
-      {
-        "id": "B",
         "texte": "100 N"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "200 N"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "400 N"
+      },
+      {
+        "id": "D",
+        "texte": "0 N, le câble ne travaille pas à l’arrêt"
       }
     ]
   },
@@ -268,19 +268,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "500 tr/min"
-      },
-      {
-        "id": "B",
-        "texte": "4 500 tr/min"
-      },
-      {
-        "id": "C",
         "texte": "1 500 tr/min"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "300 tr/min"
+      },
+      {
+        "id": "C",
+        "texte": "500 tr/min"
+      },
+      {
+        "id": "D",
+        "texte": "4 500 tr/min"
       }
     ],
     "figure": "pignon_roue"
@@ -293,19 +293,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Sens horaire (même sens que 1)"
-      },
-      {
-        "id": "B",
         "texte": "Sens antihoraire (sens contraire de 1)"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "La roue 3 ne tourne pas"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "On ne peut pas savoir sans les nombres de dents"
+      },
+      {
+        "id": "D",
+        "texte": "Sens horaire (même sens que 1)"
       }
     ],
     "figure": "engrenages3"
@@ -318,19 +318,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "0,9 %"
-      },
-      {
-        "id": "B",
         "texte": "90 %"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "111 %"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "10 %"
+      },
+      {
+        "id": "D",
+        "texte": "0,9 %"
       }
     ]
   },
@@ -367,19 +367,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "La rupture brutale en traction"
-      },
-      {
-        "id": "B",
-        "texte": "Le flambement (instabilité)"
-      },
-      {
-        "id": "C",
         "texte": "Un couple de torsion"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "Aucun risque si la section est constante"
+      },
+      {
+        "id": "C",
+        "texte": "La rupture brutale en traction"
+      },
+      {
+        "id": "D",
+        "texte": "Le flambement (instabilité)"
       }
     ]
   },
@@ -391,19 +391,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Assurer l’étanchéité du carter"
-      },
-      {
-        "id": "B",
         "texte": "Guider en rotation et transmettre les efforts à l’alésage"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "Réduire la vitesse de rotation"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "Stocker de l’énergie mécanique"
+      },
+      {
+        "id": "D",
+        "texte": "Assurer l’étanchéité du carter"
       }
     ]
   },
@@ -415,19 +415,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Énergie potentielle de pesanteur"
+        "texte": "Énergie chimique dans les plaquettes"
       },
       {
         "id": "B",
-        "texte": "Énergie thermique (échauffement)"
+        "texte": "Énergie potentielle de pesanteur"
       },
       {
         "id": "C",
-        "texte": "Énergie électrique renvoyée au réseau, toujours"
+        "texte": "Énergie thermique (échauffement)"
       },
       {
         "id": "D",
-        "texte": "Énergie chimique dans les plaquettes"
+        "texte": "Énergie électrique renvoyée au réseau, toujours"
       }
     ]
   },
@@ -439,19 +439,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "5 V"
+        "texte": "0,2 V"
       },
       {
         "id": "B",
-        "texte": "12 V"
+        "texte": "5 V"
       },
       {
         "id": "C",
-        "texte": "20 V"
+        "texte": "12 V"
       },
       {
         "id": "D",
-        "texte": "0,2 V"
+        "texte": "20 V"
       }
     ],
     "figure": "circuit_ohm"
@@ -464,19 +464,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "4,8 W"
-      },
-      {
-        "id": "B",
-        "texte": "29 W"
-      },
-      {
-        "id": "C",
         "texte": "120 W"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "120 kW"
+      },
+      {
+        "id": "C",
+        "texte": "4,8 W"
+      },
+      {
+        "id": "D",
+        "texte": "29 W"
       }
     ]
   },
@@ -488,19 +488,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "1,5 Pa"
-      },
-      {
-        "id": "B",
         "texte": "1,5 kPa"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "1,5 MPa"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "15 MPa"
+      },
+      {
+        "id": "D",
+        "texte": "1,5 Pa"
       }
     ],
     "figure": "verin_section"
@@ -537,19 +537,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Rep 3 — roulement 6205"
-      },
-      {
-        "id": "B",
         "texte": "Rep 4 — joint à lèvre"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "Rep 5 — vis CHC"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "Rep 1 — corps"
+      },
+      {
+        "id": "D",
+        "texte": "Rep 3 — roulement 6205"
       }
     ],
     "html": "\n        <table class=\"nomenc\">\n          <thead><tr><th>Rep</th><th>Désignation</th><th>Qté</th></tr></thead>\n          <tbody>\n            <tr><td>1</td><td>Corps</td><td>1</td></tr>\n            <tr><td>2</td><td>Couvercle</td><td>1</td></tr>\n            <tr><td>3</td><td>Roulement à billes 6205</td><td>2</td></tr>\n            <tr><td>4</td><td>Joint à lèvre</td><td>1</td></tr>\n            <tr><td>5</td><td>Vis CHC M6×20</td><td>6</td></tr>\n          </tbody>\n        </table>\n        "
@@ -562,19 +562,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Les axes de révolution et les traces de plans de symétrie"
+        "texte": "Les lignes de cote"
       },
       {
         "id": "B",
-        "texte": "Les contours et arêtes vues"
+        "texte": "Les axes de révolution et les traces de plans de symétrie"
       },
       {
         "id": "C",
-        "texte": "Les hachures de coupe"
+        "texte": "Les contours et arêtes vues"
       },
       {
         "id": "D",
-        "texte": "Les lignes de cote"
+        "texte": "Les hachures de coupe"
       }
     ]
   },
@@ -586,19 +586,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Un arbre de diamètre 40 mm, tolérance H7"
-      },
-      {
-        "id": "B",
-        "texte": "Un alésage de diamètre nominal 40 mm, tolérance H7"
-      },
-      {
-        "id": "C",
         "texte": "Une rugosité de 40 µm"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "Un matériau (nuance H7)"
+      },
+      {
+        "id": "C",
+        "texte": "Un arbre de diamètre 40 mm, tolérance H7"
+      },
+      {
+        "id": "D",
+        "texte": "Un alésage de diamètre nominal 40 mm, tolérance H7"
       }
     ]
   },
@@ -610,19 +610,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Un vérin simple effet (un seul orifice)"
-      },
-      {
-        "id": "B",
         "texte": "Un vérin double effet (deux orifices)"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "Un moteur pneumatique rotatif"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "Un limiteur de pression"
+      },
+      {
+        "id": "D",
+        "texte": "Un vérin simple effet (un seul orifice)"
       }
     ],
     "figure": "verin_de"
@@ -635,19 +635,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Vérifier l’absence de tension (VAT) avec un VAT en bon état"
+        "texte": "Identifier l’ouvrage sur lequel on va intervenir"
       },
       {
         "id": "B",
-        "texte": "Séparer l’équipement de ses sources d’énergie"
+        "texte": "Vérifier l’absence de tension (VAT) avec un VAT en bon état"
       },
       {
         "id": "C",
-        "texte": "Condamner les organes de séparation (cadenas / consigne)"
+        "texte": "Séparer l’équipement de ses sources d’énergie"
       },
       {
         "id": "D",
-        "texte": "Identifier l’ouvrage sur lequel on va intervenir"
+        "texte": "Condamner les organes de séparation (cadenas / consigne)"
       }
     ],
     "ordre": true
@@ -660,19 +660,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Avant toute séparation, pour gagner du temps"
+        "texte": "Seulement si un disjoncteur a déjà sauté"
       },
       {
         "id": "B",
-        "texte": "Après séparation et condamnation, avec un VAT en bon état, au plus près du lieu de travail"
+        "texte": "Avant toute séparation, pour gagner du temps"
       },
       {
         "id": "C",
-        "texte": "Uniquement en fin d’intervention, avant remise sous tension"
+        "texte": "Après séparation et condamnation, avec un VAT en bon état, au plus près du lieu de travail"
       },
       {
         "id": "D",
-        "texte": "Seulement si un disjoncteur a déjà sauté"
+        "texte": "Uniquement en fin d’intervention, avant remise sous tension"
       }
     ]
   },
@@ -684,19 +684,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Le milieu de la pièce à usiner"
-      },
-      {
-        "id": "B",
-        "texte": "L’environnement de travail (température, propreté, organisation de l’espace…)"
-      },
-      {
-        "id": "C",
         "texte": "La moyenne des mesures de contrôle"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "Le milieu scolaire de l’opérateur"
+      },
+      {
+        "id": "C",
+        "texte": "Le milieu de la pièce à usiner"
+      },
+      {
+        "id": "D",
+        "texte": "L’environnement de travail (température, propreté, organisation de l’espace…)"
       }
     ]
   },
@@ -708,19 +708,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Remplacer le moteur, c’est souvent lui"
-      },
-      {
-        "id": "B",
         "texte": "Recueillir le contexte : que s’est-il passé, voyants, témoignages, conditions de l’arrêt"
       },
       {
-        "id": "C",
+        "id": "B",
         "texte": "Reprogrammer l’automate tout de suite"
       },
       {
-        "id": "D",
+        "id": "C",
         "texte": "Commander l’ensemble des pièces d’usure du convoyeur"
+      },
+      {
+        "id": "D",
+        "texte": "Remplacer le moteur, c’est souvent lui"
       }
     ]
   },
@@ -756,19 +756,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Augmenter la vitesse et diminuer le couple"
-      },
-      {
-        "id": "B",
-        "texte": "Diminuer la vitesse et augmenter le couple"
-      },
-      {
-        "id": "C",
         "texte": "Redresser le courant alternatif"
       },
       {
-        "id": "D",
+        "id": "B",
         "texte": "Mesurer la position angulaire"
+      },
+      {
+        "id": "C",
+        "texte": "Augmenter la vitesse et diminuer le couple"
+      },
+      {
+        "id": "D",
+        "texte": "Diminuer la vitesse et augmenter le couple"
       }
     ]
   },
@@ -780,19 +780,19 @@ window.QUESTIONS = [
     "choix": [
       {
         "id": "A",
-        "texte": "Codeur incrémental sur l’axe d’un moteur"
-      },
-      {
-        "id": "B",
         "texte": "Vérin pneumatique de transfert"
       },
       {
+        "id": "B",
+        "texte": "Codeur incrémental sur l’axe d’un moteur"
+      },
+      {
         "id": "C",
-        "texte": "Détecteur inductif de présence palette"
+        "texte": "Contacteur de puissance KM1"
       },
       {
         "id": "D",
-        "texte": "Contacteur de puissance KM1"
+        "texte": "Détecteur inductif de présence palette"
       }
     ],
     "multiple": true
