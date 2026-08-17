@@ -5,7 +5,7 @@ window.DIAGNOSTIC = {
   titre: "Unités et conversions",
   formation: "BTS Maintenance des systèmes — option SP",
   dureeSec: 40 * 60,
-  appsScriptUrl: "",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbzwSAI6HREueuE_RN6WxNyOa6uGvMJOKtKY-PznMrq0yRb1JF9ZINiPeoh3anmEDKLg/exec",
   localCollecteUrl: "http://127.0.0.1:8788/",
   groupes: [
     { id: "1MS-A", label: "1MS-A — Formation initiale" },
