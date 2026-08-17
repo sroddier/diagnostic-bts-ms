@@ -1,6 +1,6 @@
 (() => {
   const CFG = window.DIAGNOSTIC;
-  const STORAGE = "diagnostic-bts-ms-2026-r1";
+  const STORAGE = CFG.storageKey || "diagnostic-bts-ms-2026-r1";
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
@@ -310,7 +310,7 @@
       };
     });
     return {
-      schema: "diagnostic-bts-ms-r1-v1",
+      schema: CFG.schema || "diagnostic-bts-ms-r1-v1",
       session: CFG.session,
       soumis_at: new Date().toISOString(),
       duree_totale_s: state.startedAt ? Math.round((Date.now() - state.startedAt) / 1000) : null,
@@ -351,7 +351,7 @@
     let profil = null;
     let erreur = null;
     if (!CFG.appsScriptUrl && (location.hostname === "127.0.0.1" || location.hostname === "localhost")) {
-      CFG.appsScriptUrl = "http://127.0.0.1:8787/";
+      CFG.appsScriptUrl = CFG.localCollecteUrl || "http://127.0.0.1:8787/";
     }
     const url = (CFG.appsScriptUrl || "").trim();
     if (url) {

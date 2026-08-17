@@ -4,7 +4,8 @@ Test diagnostique de début de 1re année : **mécanique + tronc commun**.
 Une heure en salle, trois groupes (`1MS-A`, `1MS-B`, `1MS-ALT`).  
 Site public, résultats nominatifs dans **votre** feuille Google (privée).
 
-**Site (après publication) :** https://sroddier.github.io/diagnostic-bts-ms/
+**Site (après publication) :** https://sroddier.github.io/diagnostic-bts-ms/  
+**Unités et conversions :** https://sroddier.github.io/diagnostic-bts-ms/unites/
 
 ## Ce que ça fait
 

@@ -1,12 +1,12 @@
 window.DIAGNOSTIC = {
-  session: "2026-r1",
-  storageKey: "diagnostic-bts-ms-2026-r1",
-  schema: "diagnostic-bts-ms-r1-v1",
-  titre: "Positionnement rentrée",
+  session: "2026-unites",
+  storageKey: "diagnostic-unites-2026-r1",
+  schema: "diagnostic-unites-r1-v1",
+  titre: "Unités et conversions",
   formation: "BTS Maintenance des systèmes — option SP",
-  dureeSec: 55 * 60,
-  /* Coller l’URL du déploiement Apps Script (se termine par /exec). */
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycbxORkveocDQUOv_uf2YD6FCwCXHag7t-QC-7Zk7nP_QKCjifkM5LVpD4IMBOeE08WF5HQ/exec",
+  dureeSec: 40 * 60,
+  appsScriptUrl: "",
+  localCollecteUrl: "http://127.0.0.1:8788/",
   groupes: [
     { id: "1MS-A", label: "1MS-A — Formation initiale" },
     { id: "1MS-B", label: "1MS-B — Formation initiale" },
