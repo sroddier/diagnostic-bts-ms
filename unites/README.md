@@ -2,7 +2,8 @@
 
 Même dispositif que le [positionnement général](../README.md), ciblé **unités et conversions**.
 
-**Site :** https://sroddier.github.io/diagnostic-bts-ms/unites/
+**Site :** https://sroddier.github.io/diagnostic-bts-ms/unites/  
+**Cours / jeu :** https://sroddier.github.io/diagnostic-bts-ms/unites/jeu/
 
 | Domaine | Code | Items |
 |---|---|---|

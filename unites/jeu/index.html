@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier des unités — BTS MS</title>
+  <meta name="description" content="Cours interactif en niveaux : préfixes, conversions, pression, puis boss de ligne de production." />
+  <link rel="stylesheet" href="../../css/app.css" />
+  <link rel="stylesheet" href="css/jeu.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%2310141c' width='64' height='64' rx='10'/><text x='32' y='42' text-anchor='middle' font-size='18' font-family='Georgia' fill='%23e8b931'>MS</text></svg>" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">MS</span>
+      <div>
+        <strong>BTS MS · option SP</strong>
+        <em>Atelier des unités</em>
+      </div>
+    </div>
+    <div class="meta" id="qui"></div>
+  </header>
+
+  <main>
+    <section class="ecran" id="ecran-carte">
+      <div class="hero">
+        <div class="kicker">Cours interactif · 6 ateliers + boss</div>
+        <h1>Convertir,<br>puis tenir la ligne.</h1>
+        <p class="lede">Même programme que le diagnostic Unités. Ici on a le droit au corrigé. Quatre bonnes réponses débloquent l’atelier suivant. Le boss, c’est lundi 6 h : vérin + convoyeur.</p>
+      </div>
+      <div class="hud">
+        <span>Progression sur cet ordinateur</span>
+        <span id="etoiles-tot">0 / 7</span>
+      </div>
+      <div id="carte"></div>
+      <div class="actions">
+        <button class="btn ghost" type="button" id="btn-reset">Réinitialiser</button>
+        <a class="btn ghost" href="../">Diagnostic unités (évaluation)</a>
+      </div>
+    </section>
+
+    <section class="ecran" id="ecran-niveau" hidden>
+      <div class="kicker" id="niv-kicker"></div>
+      <h1 id="niv-titre"></h1>
+      <div class="progress"><div class="bar"><div id="progress-bar"></div></div></div>
+      <article class="qbox" id="zone"></article>
+    </section>
+  </main>
+
+  <footer>
+    Cours, pas une note · <span id="annee"></span>
+    · <a href="../">Diagnostic</a>
+    · <a href="../../">Positionnement</a>
+  </footer>
+  <div id="toast" hidden></div>
+
+  <script src="js/contenu.js"></script>
+  <script src="js/jeu.js"></script>
+</body>
+</html>
