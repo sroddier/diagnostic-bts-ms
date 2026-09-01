@@ -3,7 +3,7 @@
   text-align: left; background: var(--card); border: 1px solid var(--line);
   border-radius: 14px; padding: 0.85rem 1rem; margin: 0 0 0.55rem;
 }
-.node:hover:not(:disabled) { border-color: #5a4a18; }
+.node:hover:not(:disabled) { border-color: var(--accent); }
 .node.lock { opacity: 0.45; cursor: not-allowed; }
 .node.won { border-color: #3d5a3a; }
 .node.boss { background: radial-gradient(600px 120px at 100% 0%, rgba(224,122,95,0.18), transparent 50%), var(--card); }
@@ -11,7 +11,7 @@
 .num {
   flex: 0 0 2.4rem; height: 2.4rem; border-radius: 10px;
   display: grid; place-items: center; font-weight: 800;
-  background: #2a3344; color: var(--text);
+  background: var(--inset); color: var(--text);
 }
 .node.won .num { background: #16301c; color: var(--ok); }
 .node.boss .num { background: #2e1814; color: var(--hot); }
@@ -22,7 +22,7 @@
 .choix.ordre .opt { align-items: center; }
 .ordre-btns { margin-left: auto; display: flex; gap: 0.3rem; }
 .ordre-btns button {
-  background: #2a3344; border: 0; border-radius: 8px; width: 2rem; height: 2rem; font-weight: 700;
+  background: var(--inset); border: 0; border-radius: 8px; width: 2rem; height: 2rem; font-weight: 700;
 }
 
 .hud {
@@ -33,8 +33,8 @@
 
 .regles { margin: 0.8rem 0; padding: 0; list-style: none; display: grid; gap: 0.45rem; }
 .regles li {
-  background: #10141c; border: 1px solid var(--line); border-radius: 10px;
-  padding: 0.55rem 0.75rem; color: #c5cfde;
+  background: #fff; border: 1px solid var(--line); border-radius: 10px;
+  padding: 0.55rem 0.75rem; color: var(--muted);
 }
 .geste {
   border-left: 3px solid var(--accent); padding: 0.55rem 0.8rem;
@@ -56,7 +56,7 @@
 
 #toast {
   position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%);
-  background: #241e10; color: var(--accent); border: 1px solid #5a4a18;
+  background: #f4e4dc; color: var(--accent); border: 1px solid #e0c4b8;
   border-radius: 10px; padding: 0.55rem 0.9rem; z-index: 30;
 }
 [hidden] { display: none !important; }
