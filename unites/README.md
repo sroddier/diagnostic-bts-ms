@@ -14,7 +14,7 @@ Même dispositif que le [positionnement général](../README.md), ciblé **unit�
 | Énergie et puissance | ENE | 5 |
 | Ordre de grandeur | COH | 5 |
 
-30 questions, 40 minutes, pas de calculatrice. Groupes `1MS-A` / `1MS-B` / `1MS-ALT`.
+30 questions, 40 minutes, pas de calculatrice. Groupes 1re et 2e année (`1MS-*` / `2MS-*`).
 
 **Feuille séparée** de celle du positionnement général (ne pas mélanger les copies).
 

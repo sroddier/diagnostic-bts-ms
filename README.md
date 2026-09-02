@@ -1,7 +1,7 @@
 # Positionnement rentrée — BTS MS option SP
 
 Test diagnostique de début de 1re année : **mécanique + tronc commun**.  
-Une heure en salle, trois groupes (`1MS-A`, `1MS-B`, `1MS-ALT`).  
+Une heure en salle, 1re et 2e année (`1MS-A/B/ALT`, `2MS-A/B/ALT`).  
 Site public, résultats nominatifs dans **votre** feuille Google (privée).
 
 **Site (après publication) :** https://sroddier.github.io/diagnostic-bts-ms/  

@@ -4,7 +4,7 @@ Fichier versionné, sans copie d’étudiant. À remplir / faire rédiger à par
 
 ## Bilan classe
 
-- Effectifs par groupe (1MS-A / 1MS-B / 1MS-ALT) et par bac
+- Effectifs par groupe (1MS-A/B/ALT, 2MS-A/B/ALT) et par bac
 - Radar moyen des 6 domaines
 - 5 items les plus réussis / 5 les plus ratés
 - Écarts typiques bac pro vs STI2D vs général (biais déjà tagués dans la clé)
