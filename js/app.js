@@ -57,7 +57,17 @@
     return (CFG.appsScriptUrl || "").trim();
   }
 
+  let codeOkCache = "";
+
+  function reveillerCollecte() {
+    const url = collecteUrl();
+    if (!url) return;
+    fetch(url, { method: "GET", redirect: "follow", cache: "no-store" }).catch(() => {});
+  }
+
   async function verifierCodeSeance(code) {
+    const normalise = code.trim().toUpperCase().replace(/\s+/g, "");
+    if (codeOkCache && codeOkCache === normalise) return { ok: true };
     const url = collecteUrl();
     if (!url) {
       return { ok: false, erreur: "Collecte non configurée : le test ne peut pas démarrer sans code vérifié." };
@@ -72,6 +82,7 @@
     if (!json.ok) {
       return { ok: false, erreur: json.erreur || "Code séance incorrect." };
     }
+    codeOkCache = normalise;
     return { ok: true };
   }
 
@@ -105,7 +116,7 @@
     const old = btn ? btn.textContent : "";
     if (btn) {
       btn.disabled = true;
-      btn.textContent = "Vérification du code…";
+      btn.textContent = "Vérification du code (quelques secondes)…";
     }
     let gate;
     try {
@@ -503,6 +514,9 @@
   /* ——— Boot ——— */
   remplirListes();
   $("#annee").textContent = new Date().getFullYear();
+  reveillerCollecte();
+  const champCode = $("#form-identite") && $("#form-identite").querySelector('[name="code"]');
+  if (champCode) champCode.addEventListener("focus", reveillerCollecte, { once: true });
   if (state.phase === "test" && state.identite && !state.soumis) {
     demarrerTest();
   } else if (state.phase === "resultat" && state.profil) {
