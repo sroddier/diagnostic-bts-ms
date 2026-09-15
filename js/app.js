@@ -50,7 +50,32 @@
       CFG.bacs.map((x) => `<option value="${x.id}">${x.label}</option>`).join("");
   }
 
-  $("#form-identite").addEventListener("submit", (e) => {
+  function collecteUrl() {
+    if (!CFG.appsScriptUrl && (location.hostname === "127.0.0.1" || location.hostname === "localhost")) {
+      CFG.appsScriptUrl = CFG.localCollecteUrl || "http://127.0.0.1:8787/";
+    }
+    return (CFG.appsScriptUrl || "").trim();
+  }
+
+  async function verifierCodeSeance(code) {
+    const url = collecteUrl();
+    if (!url) {
+      return { ok: false, erreur: "Collecte non configurée : le test ne peut pas démarrer sans code vérifié." };
+    }
+    const res = await fetch(url, {
+      method: "POST",
+      redirect: "follow",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action: "ouvrir", code_seance: code, session: CFG.session }),
+    });
+    const json = await res.json();
+    if (!json.ok) {
+      return { ok: false, erreur: json.erreur || "Code séance incorrect." };
+    }
+    return { ok: true };
+  }
+
+  $("#form-identite").addEventListener("submit", async (e) => {
     e.preventDefault();
     const fd = new FormData(e.target);
     const identite = {
@@ -74,6 +99,28 @@
     }
     if (!$("#rgpd").checked) {
       toast("Cochez la case d’information pour commencer.");
+      return;
+    }
+    const btn = e.target.querySelector('[type="submit"]');
+    const old = btn ? btn.textContent : "";
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "Vérification du code…";
+    }
+    let gate;
+    try {
+      gate = await verifierCodeSeance(identite.code_seance);
+    } catch (err) {
+      gate = { ok: false, erreur: "Impossible de vérifier le code (réseau). Réessayez." };
+    }
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = old;
+    }
+    if (!gate.ok) {
+      toast(gate.erreur);
+      const champ = e.target.querySelector('[name="code"]');
+      if (champ) champ.focus();
       return;
     }
     const now = Date.now();
@@ -350,10 +397,7 @@
     $("#overlay-txt").textContent = "Enregistrement de la copie…";
     let profil = null;
     let erreur = null;
-    if (!CFG.appsScriptUrl && (location.hostname === "127.0.0.1" || location.hostname === "localhost")) {
-      CFG.appsScriptUrl = CFG.localCollecteUrl || "http://127.0.0.1:8787/";
-    }
-    const url = (CFG.appsScriptUrl || "").trim();
+    const url = collecteUrl();
     if (url) {
       try {
         const res = await fetch(url, {

@@ -53,9 +53,16 @@ class Handler(BaseHTTPRequestHandler):
         except json.JSONDecodeError:
             self._json(400, {"ok": False, "erreur": "JSON invalide"})
             return
-        code = (data.get("code_seance") or "").strip()
-        if SESSION_CODE and code != SESSION_CODE:
-            self._json(403, {"ok": False, "erreur": "Code séance incorrect"})
+        code = (data.get("code_seance") or "").strip().upper().replace(" ", "")
+        attendu = SESSION_CODE.strip().upper().replace(" ", "")
+        if not code:
+            self._json(403, {"ok": False, "erreur": "Code séance obligatoire. Il est écrit au tableau."})
+            return
+        if code != attendu:
+            self._json(403, {"ok": False, "erreur": "Code séance incorrect. Demandez-le au professeur."})
+            return
+        if data.get("action") == "ouvrir":
+            self._json(200, {"ok": True, "ouvrir": True})
             return
         ident = data.get("identite") or {}
         if not ident.get("nom") or not ident.get("prenom") or not ident.get("groupe"):

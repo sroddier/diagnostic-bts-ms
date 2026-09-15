@@ -46,8 +46,16 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         n = int(self.headers.get("Content-Length", "0"))
         data = json.loads(self.rfile.read(n).decode("utf-8"))
-        if SESSION_CODE and (data.get("code_seance") or "").strip() != SESSION_CODE:
-            self._json(403, {"ok": False, "erreur": "Code séance incorrect"})
+        code = (data.get("code_seance") or "").strip().upper().replace(" ", "")
+        attendu = SESSION_CODE.strip().upper().replace(" ", "")
+        if not code:
+            self._json(403, {"ok": False, "erreur": "Code séance obligatoire. Il est écrit au tableau."})
+            return
+        if code != attendu:
+            self._json(403, {"ok": False, "erreur": "Code séance incorrect. Demandez-le au professeur."})
+            return
+        if data.get("action") == "ouvrir":
+            self._json(200, {"ok": True, "ouvrir": True})
             return
         res = scorer(data, CLE)
         res.pop("details", None)

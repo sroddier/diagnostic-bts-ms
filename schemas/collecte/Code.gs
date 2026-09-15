@@ -37,10 +37,19 @@ function doPost(e) {
     var raw = (e && e.postData && e.postData.contents) || "";
     var data = JSON.parse(raw);
     var props = PropertiesService.getScriptProperties();
-    var attendu = (props.getProperty("SESSION_CODE") || "").trim();
-    var recu = String(data.code_seance || "").trim();
-    if (attendu && recu !== attendu) {
-      return json_({ ok: false, erreur: "Code séance incorrect" });
+    var recu = String(data.code_seance || "").trim().toUpperCase().replace(/\s+/g, "");
+    var attendu = String(props.getProperty("SESSION_CODE") || "").trim().toUpperCase().replace(/\s+/g, "");
+    if (!recu) {
+      return json_({ ok: false, erreur: "Code séance obligatoire. Il est écrit au tableau." });
+    }
+    if (!attendu) {
+      return json_({ ok: false, erreur: "Code séance non configuré côté enseignant." });
+    }
+    if (recu !== attendu) {
+      return json_({ ok: false, erreur: "Code séance incorrect. Demandez-le au professeur." });
+    }
+    if (data.action === "ouvrir") {
+      return json_({ ok: true, ouvrir: true });
     }
     var ident = data.identite || {};
     if (!ident.nom || !ident.prenom || !ident.groupe) {
